@@ -31,5 +31,5 @@ Then("the displayed refund date for the program is correct",async function () {
     const EXPECTED_REFUND_DATE = productInfo.refundDate;
     console.log(`Actual refund date: ${ACTUAL_REFUND_DATE}`);
     console.log(`Expected refund date: ${EXPECTED_REFUND_DATE}`);
-    await expect(ACTUAL_REFUND_DATE).toBe(EXPECTED_REFUND_DATE);
+    expect(ACTUAL_REFUND_DATE).toBe(EXPECTED_REFUND_DATE);
 });
