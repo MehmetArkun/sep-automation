@@ -9,3 +9,12 @@ Feature: Click on the next button on step 1
     
 
     #TODO: Create scenarios that cover all the acceptance criteria
+
+    Background: 
+        Given user is on the enrollment page
+
+    
+    @sep19
+    Scenario: Verify that next button take customers to step 2 when given valid info
+
+
