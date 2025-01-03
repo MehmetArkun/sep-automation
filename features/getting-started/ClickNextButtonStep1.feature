@@ -10,11 +10,28 @@ Feature: Click on the next button on step 1
 
     #TODO: Create scenarios that cover all the acceptance criteria
 
-    Background: 
+
+    @sep19
+    Scenario: Verify that next button take customers to step 2 when given valid info
         Given user is on the enrollment page
+        Given user clicks and fills first name section
+        Then user clicks and fills last name section
+        Then user clicks and fills email section
+        Then user clicks and fills phone number section
+        Then user chooses an option from how did you hear about us
+        And user clicks on next button
+        Then user succesfully lands on the step 2 page
 
     
     @sep19
-    Scenario: Verify that next button take customers to step 2 when given valid info
+    Scenario: Verify that next button take customers when only required fields are filled
+        Given user is on the enrollment page
+        Given user clicks and fills first name section
+        Then user clicks and fills last name section
+        Then user clicks and fills email section
+        Then user clicks and fills phone number section
+        And user clicks on next button
+        Then user succesfully lands on the step 2 page
+
 
 
